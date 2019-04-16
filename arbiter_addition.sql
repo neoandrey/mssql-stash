@@ -1,0 +1,14 @@
+auth_id_rsp
+settle_amount_rsp
+settle_amount_impact
+terminal_type
+settlement_currency
+online_system_id
+server_id
+
+
+contstraint 
+
+tran_nr
+online_system_id
+Server_id

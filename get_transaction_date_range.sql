@@ -1,0 +1,1 @@
+SELECT MIN(datetime_req) AS 'MIN_TRAN_DATE', MAX(datetime_req) AS 'MAX_TRAN_DATE',DATEDIFF(D, MIN(datetime_req), MAX(datetime_req))AS 'DATE_DIFFERENCE'  FROM post_tran (nolock)

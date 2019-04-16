@@ -1,0 +1,1 @@
+usp_who2  @show_deadlocks_only=0 or usp_who2 0

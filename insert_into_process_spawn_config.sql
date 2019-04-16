@@ -1,0 +1,2 @@
+INSERT INTO post_process_spawn_config (process_name, entity_name, default_path, environment, jvm_dll, office_properties_file, class_path, vm_options)
+VALUES ('Reports','FIB_POS_Acquired_csv', 'C:\postilion\Office\Reports\Crystal\bin90', NULL,'jvm.dll', NULL, NULL,NULL)

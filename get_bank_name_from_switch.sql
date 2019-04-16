@@ -1,0 +1,1 @@
+SELECT DISTINCT REPLACE(REPLACE(REPLACE(online_node_name, 'SWT', ''),'src', ''), 'snk', '')FROM post_online_node

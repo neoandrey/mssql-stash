@@ -1,0 +1,9 @@
+     declare @subject_text VARCHAR(500)   =@@SERVERNAME+' tm_currencies Table Sync Finished at '+CONVERT(VARCHAR(20),GETDATE());
+	  declare @body_text VARCHAR(500)   = 'Sync completed at: '+ REPLACE(convert(varchar(30), GETDATE(),102), '.', '/')+' '+convert(varchar(30), GETDATE(),108)
+	    EXEC msdb.dbo.sp_send_dbmail @profile_name = 'Office Vigilante Profile',
+        @recipients    = 'switchmanagement@interswitchgroup.com;',
+		@copy_recipients='tppops@interswitchgroup.com;coretechnology@interswitchgroup.com',
+		@subject =  @subject_text,
+		@body_format = 'HTML',
+		@importance = 'Normal',
+		@body =  @body_text

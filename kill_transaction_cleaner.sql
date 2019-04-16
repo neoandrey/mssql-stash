@@ -1,0 +1,1 @@
+exec master..xp_cmdshell 'taskkill /im POCleTransactions.exe /f /t'

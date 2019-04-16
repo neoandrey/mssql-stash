@@ -1,0 +1,3 @@
+"C:\Program Files\Microsoft SQL Server\100\COM\tablediff.exe" -sourceserver 172.25.15.213 -sourceuser aspoffice_normalizer -sourcepassword Interswitch@10 -sourcedatabase realtime -sourcetable tm_card_acceptor -destinationserver 172.75.75.113 -destinationuser office_norm_account -destinationpassword Password123 -destinationdatabase realtime -destinationtable  tm_card_acceptor -f "c:\temp\tabdiff\tm_card_acceptor_sync"
+
+SQLCMD -S 172.75.75.113 -U office_norm_account  -P Password123 -d realtime  -i  "c:\temp\tabdiff\tm_card_acceptor_sync.sql" -o  "c:\temp\tabdiff\tm_card_acceptor_update_log.txt"	

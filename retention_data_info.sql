@@ -1,0 +1,1 @@
+SELECT MIN(datetime_req)AS START_DATE,MAX(datetime_req)AS END_DATE,DATEDIFF(D,MIN(datetime_req), MAX(datetime_req)) AS 'RETENTION_PERIOD(DAYS)' FROM post_tran (NOLOCK)

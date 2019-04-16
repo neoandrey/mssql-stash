@@ -1,0 +1,1 @@
+SELECT SUBSTRING(structured_data_req, CHARINDEX('CfgReceivingInstitutionIDCode>',structured_data_req)+30, (CHARINDEX('</CfgReceivingInstitutionIDCode>',structured_data_req)-CHARINDEX('CfgReceivingInstitutionIDCode>',structured_data_req)-30))FROM struct_data_filter_2

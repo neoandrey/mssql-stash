@@ -1,0 +1,3 @@
+SELECT datetime_req, pan, count(tran_nr)  no_of_transactions, SUM(dbo.formatAmount(tran_amount_req,tran_currency_code)) total_amount, tran_currency_code  FROM post_tran trans (NOLOCK) JOIN post_tran_cust cust (NOLOCK) ON trans.post_tran_cust_id =cust.post_tran_cust_id
+WHERE tran_completed =1 AND rsp_code_rsp='00' AND message_type IN ('0200','0220') AND LEFT(terminal_id, 1) ='2' AND datetime_req BETWEEN DATEADD(M,-1,GETDATE()) AND GETDATE()
+GROUP BY pan, tran_nr, tran_currency_code

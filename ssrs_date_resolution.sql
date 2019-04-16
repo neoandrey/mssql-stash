@@ -1,0 +1,4 @@
+
+			SET @StartDate =  REPLACE(CONVERT(VARCHAR(8),CONVERT(DATETIME, @StartDate),112),'/', '') 
+			SET @EndDate   = REPLACE(CONVERT(VARCHAR(8),CONVERT(DATETIME, @EndDate),112),'/', '')
+

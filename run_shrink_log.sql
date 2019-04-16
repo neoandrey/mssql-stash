@@ -1,0 +1,1 @@
+exec [dbo].[usp_log_file_manager] @growth_factor=3, @set_checkpoint =1, @save_to='G:\postilion_log_backup',  @possible_growth_space =1000

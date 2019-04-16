@@ -1,0 +1,1 @@
+BACKUP DATABASE postilion_office TO DISK='G:\postilion_office\backup\postilion_office.bak' WITH COMPRESSION;

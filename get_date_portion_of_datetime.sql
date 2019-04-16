@@ -1,0 +1,10 @@
+SELECT DATEADD(D, -1, DATEDIFF(D, 0, GETDATE()))
+
+
+SELECT CONVERT(VARCHAR(10), GETDATE(),108) AS TIME_PORTION
+SELECT  CONVERT(VARCHAR(10), GETDATE(),112) AS DATE_PORTION
+SELECT DATEDIFF(HOUR, REPLACE(CONVERT(VARCHAR(10), GETDATE(),111),'/', '-') , GETDATE())
+
+  
+
+bcp "exec postilion_office.dbo.run_export_on_demand;" queryout query_results.txt -c -t, -T -S

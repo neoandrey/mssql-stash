@@ -1,0 +1,5 @@
+You can import data into a global or local temporary table and export data from a global temporary table, as follows:
+Global temporary table (for example, ##groupSales)
+You can bulk import data into a global temporary table by using the bcp utility, BULK INSERT, or INSERT ... SELECT * FROM OPENROWSET(BULK...). You can also use the bcp utility to export data from a global temporary table. When you specify a global temporary table, omit the database name, because temporary tables exist only in tempdb.
+Local temporary table (for example, #mySales)
+You can bulk import data into a local temporary table by using either BULK INSERT or INSERT ... SELECT * FROM OPENROWSET(BULK...) only. Local temporary tables are not supported by the bcp utility, so you cannot use bcp to export from or import into a local temporary table.

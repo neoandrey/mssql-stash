@@ -1,0 +1,1 @@
+EXEC sp_serveroption 'ASPOFFICE', 'DATA ACCESS', TRUE

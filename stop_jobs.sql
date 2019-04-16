@@ -1,0 +1,1 @@
+EXEC msdb.dbo.sp_stop_job @job_name = 'shrink_postilion_office_logfile'

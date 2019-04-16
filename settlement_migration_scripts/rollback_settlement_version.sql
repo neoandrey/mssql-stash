@@ -1,0 +1,61 @@
+
+DECLARE @config_version INT; 
+DECLARE @config_version INT;
+
+SET @config_version = 793
+
+DELETE FROM dbo.sstl_journal_adj WHERE config_version>=@config_version
+DELETE FROM dbo.spay_aggregation WHERE config_version>=@config_version
+DELETE FROM dbo.spay_proc_ent WHERE config_version>=@config_version
+DELETE FROM dbo.spay_proc_ent_fltr_grp WHERE config_version>=@config_version
+DELETE FROM dbo.spay_se_acc WHERE config_version>=@config_version
+DELETE FROM dbo.spay_se_acc_rel WHERE config_version>=@config_version
+DELETE FROM dbo.spay_se_acc_rel_param WHERE config_version>=@config_version
+DELETE FROM dbo.spay_se_amount_pay_freq WHERE config_version>=@config_version
+DELETE FROM dbo.spay_se_fee_pay_freq WHERE config_version>=@config_version
+DELETE FROM dbo.spay_statement_profile WHERE config_version>=@config_version
+DELETE FROM dbo.spst_aggregation WHERE config_version>=@config_version
+DELETE FROM dbo.spst_proc_ent WHERE config_version>=@config_version
+DELETE FROM dbo.spst_proc_ent_fltr_grp WHERE config_version>=@config_version
+DELETE FROM dbo.spst_se_amount_pst_freq WHERE config_version>=@config_version
+DELETE FROM dbo.spst_se_fee_pst_freq WHERE config_version>=@config_version
+DELETE FROM dbo.spst_statement_profile WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_acc WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_coa WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_journal_fltr_grp WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_journal_fltr_grp_elem WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_journal_fltr_param WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_pred WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_pred_prop_value WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_proc_ent WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_prop WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_prop_value WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_prop_value_node WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_acc_nr WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_amount WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_amount_value WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_amount_value_int WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_cal WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_cal_date_range WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_fee WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_fee_priority WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_fee_value WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_nt_fee WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_nt_fee_acc_post WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_nt_fee_value WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_rule WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_rule_acc_post WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_statement WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_tax WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_tax_rate WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_se_third_party WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_session WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_statement_profile WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_tran_field WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_tran_ident WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_tran_ident_def WHERE config_version>=@config_version
+DELETE FROM dbo.spay_session WHERE config_version>=@config_version
+DELETE FROM dbo.spst_session WHERE config_version>=@config_version
+DELETE FROM dbo.spst_exception WHERE config_version>=@config_version
+DELETE FROM dbo.sstl_config_version WHERE config_version>=@config_version 

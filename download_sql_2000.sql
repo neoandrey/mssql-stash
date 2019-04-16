@@ -1,0 +1,1 @@
+http://msdn.microsoft.com/en-us/sqlserver/bb895925.aspx

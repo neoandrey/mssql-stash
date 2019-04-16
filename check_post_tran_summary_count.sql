@@ -1,0 +1,7 @@
+SELECT server_name = '172.25.10.89', * FROM  OPENQUERY([172.25.10.89],  ' SELECT  post_tran_count=(SELECT COUNT(*) FROM post_tran (NOLOCK, INDEX=ix_post_tran_9) WHERE recon_business_date = ''20171106''),  post_tran_summary_count = (SELECT COUNT(*) FROM  post_tran_summary  WHERE recon_business_date = ''20171106'' )')
+UNION ALL 
+SELECT server_name = '172.25.10.94', * FROM  OPENQUERY([172.25.10.94],  ' SELECT  post_tran_count=(SELECT COUNT(*) FROM post_tran (NOLOCK, INDEX=ix_post_tran_9) WHERE recon_business_date = ''20171106''),  post_tran_summary_count = (SELECT COUNT(*) FROM  post_tran_summary  WHERE recon_business_date = ''20171106'' )')
+UNION ALL 
+SELECT server_name = '172.75.75.19', * FROM  OPENQUERY([172.75.75.19],  ' SELECT  post_tran_count=(SELECT COUNT(*) FROM post_tran (NOLOCK, INDEX=ix_post_tran_9) WHERE recon_business_date = ''20171106''),  post_tran_summary_count = (SELECT COUNT(*) FROM  post_tran_summary  WHERE recon_business_date = ''20171106'' )')
+UNION ALL
+SELECT server_name = '172.75.75.28', * FROM  OPENQUERY([172.75.75.28],  ' SELECT  post_tran_count=(SELECT COUNT(*) FROM post_tran (NOLOCK, INDEX=ix_post_tran_9) WHERE recon_business_date = ''20171106''),  post_tran_summary_count = (SELECT COUNT(*) FROM  post_tran_summary  WHERE recon_business_date = ''20171106'' )') 
